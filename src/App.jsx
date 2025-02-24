@@ -6,12 +6,14 @@ import ReflectionHub from './pages/ReflectionHub';
 import { Routes, Route, Link } from 'react-router-dom';
 
 
+
 function App() {
+  
   return (
     <>
       <nav>
-        <Link to={'/'}>Home</Link>| |
-        <Link to={'/create'}>JournalEntry</Link> | |
+        <Link to={'/'}>Home </Link>| |
+        <Link to={'/create'}>JournalEntry </Link> | |
         <Link to={'/update'}>ReflectionHub</Link> | |
         <Link to= {'/mindfulMoments'}>MindfulMoments</Link> 
       </nav>
