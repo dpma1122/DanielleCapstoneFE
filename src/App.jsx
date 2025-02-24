@@ -19,7 +19,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/create' element={<JournalEntry /> } />
-      <Route path='/update' element={<ReflectionHub />} />
+      <Route path='/update' element={<ReflectionHub />} />-
       <Route path ='/mindfulMoments' element= {<MindfulMoments/>} />
       <Route path='*' element={<h1> 404: Not Found</h1>} />
     
