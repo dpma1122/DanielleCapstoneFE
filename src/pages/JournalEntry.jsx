@@ -1,3 +1,3 @@
 export default function JournalEntry() {
-    return(<><h1>AddEntry</h1></>)
+    return(<><h1>Add Entry</h1></>)
 }
