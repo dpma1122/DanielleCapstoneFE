@@ -1,9 +1,13 @@
 import './App.css'
+import Home from './pages/Home'; 
 
 
 function App() {
-  return (
-    <> <h1> is it working</h1></>
+  return (<>
+  
+  
+  </>
+ 
   )
 }
 
