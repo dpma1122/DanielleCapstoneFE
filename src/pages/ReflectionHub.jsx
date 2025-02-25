@@ -10,20 +10,27 @@ export default function ReflectionHub() {
         async function getData() {
             try {
                 const res = await axios.get('http://localhost:3000/journal');
-                setJournals(res.data);
+                setJournals(res.data); 
+                setNewJournalTitle;
+                setNewJournalContent; 
             } catch (error) {
                 console.error('Error fetching journal data:', error);
             }
         }
         getData();
     }, []);
- 
+   
+
     return (
         <>
             <h1>Edit</h1>
             {journals && journals.map((el) => (
                 <p key={el.id || `journal-${el._id}`}>{el.journal}</p>
             ))}
+            <div>
+            
+
+            </div>
         </>
     );
 }
