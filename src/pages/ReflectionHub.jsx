@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import JournalItem from '../components/JournalItem';
+import EditingForm from '../components/EditingForm';
  
 export default function ReflectionHub() {
     const [journals, setJournals] = useState([]);
@@ -19,13 +20,13 @@ export default function ReflectionHub() {
         getData();
     }, []);
  
-    const handleTitleChange = (e) => {
-        setNewJournalTitle(e.target.value);
-    };
+    // const handleTitleChange = (e) => {
+    //     setNewJournalTitle(e.target.value);
+    // };
  
-    const handleContentChange = (e) => {
-        setNewJournalContent(e.target.value);
-    };
+    // const handleContentChange = (e) => {
+    //     setNewJournalContent(e.target.value);
+    // };
  
     return (
         <>

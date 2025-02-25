@@ -1,10 +1,11 @@
-export default function JournalItem(props) {
-    return (
+import { useState } from "react";
 
-             <div >
-                        <p>{props.journal.title}</p>   
-                        <p>{props.journal.content}</p>
-                    </div>
+export default function JournalItem(props) {
     
-    )
+  return (
+    <div>
+      <p>{props.journal.title}</p>
+      <p>{props.journal.content}</p>
+    </div>
+  );
 }
