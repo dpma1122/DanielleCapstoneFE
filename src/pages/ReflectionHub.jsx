@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import Journal from '../components/Journal';
+import JournalItem from '../components/JournalItem';
  
 export default function ReflectionHub() {
     const [journals, setJournals] = useState([]);
@@ -30,25 +30,15 @@ export default function ReflectionHub() {
     return (
         <>
             <h1>Your Journey Begins Here</h1>
-            {journals && journals.map((el) => (
-                <p key={el.id || `journal-${el._id}`}>{el.journal}</p>
-            ))}
-            <div>
-                <input
-                    type="text"
-                    value={newJournalTitle}
-                    onChange={handleTitleChange}
-                    placeholder="Enter journal title"
-                    
-                /> 
-                <br/>
-                <textarea
-                    value={newJournalContent}
-                    onChange={handleContentChange}
-                    placeholder="Enter journal content"
-                    rows="4"
-                />
-            </div>
+            {journals && journals.map((journal) => {
+                console.log(journal)
+                return (
+                    <JournalItem journal={journal} key={journal._id} />
+                   
+                   )
+            })}
+        
+          
         </>
     );
 }
