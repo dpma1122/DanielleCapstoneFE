@@ -43,7 +43,8 @@ const EditJournalForm = ({ journal, onUpdate, onCancel }) => {
         value={formData.content}
         onChange={handleChange}
       />
-      <button type="submit">Update</button>
+      <button type="submit">Update</button> 
+      <br/>
       <button type="button" onClick={onCancel}>Cancel</button>
     </form>
   );

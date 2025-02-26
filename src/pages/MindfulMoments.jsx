@@ -1,4 +1,4 @@
-import { useState } from 'react'; 
+import { useState } from 'react';
  
 const RandomQuote = () => {
     const quotes = [
@@ -12,7 +12,7 @@ const RandomQuote = () => {
         "All you can do is TRY!"
     ];
  
-    const [quote, setQuote] = useState('')
+    const [quote, setQuote] = useState('');
  
     const displayRandomQuote = () => {
         const randomIndex = Math.floor(Math.random() * quotes.length);
@@ -22,7 +22,13 @@ const RandomQuote = () => {
     return (
         <div className="quoteContainer">
             <h1>Embrace the Journey</h1>
-            <p className="quoteText">{quote || "Click here for mindful moments"}</p>
+            <p className="quoteText">
+                {quote ? (
+                    <strong><em>{quote}</em></strong>
+                ) : (
+                    "Click New Quotes for Mindful Moments"
+                )}
+            </p>
             <button onClick={displayRandomQuote}>New Quote</button>
         </div>
     );

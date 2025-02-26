@@ -39,7 +39,7 @@ Ex: The Journal App is a user-friendly digital journaling platform that encourag
 * Description of image location, or < “  https://drive.google.com/file/d/1XnZEGBkFYenqs_TSlZgbrjiEPu87t1lx/view?usp=sharing  “>
 
 ## Trello Planning
-* Link to trello or planning board - ex: https://trello.com/b/2jeHdFcV/project-1-connect-4
+* Link to trello or planning board - ex:
 
 ## <a name="design"></a>Design
 * Simplistic, rustic
@@ -63,14 +63,17 @@ https://github.com/dpma1122/DanielleCapstoneBE
 
 ## <a name="Danielle Aguirre"></a>About The Author
 I build applications and mini projects based on my various interests, always looking for creative solutions to real-world problems. While no app is ever perfect, I find joy in the process and take pride in each final product I create!
+https://www.linkedin.com/in/danielle-aguirre-b403912a4/
 
 
 ## Special Mention: Supporters of the build
-* Developer(s) – Supriya Bhor, Shila Pattewar, Shobana Hariraman (provided great assistance)
+* Developer(s) –
 * User(s)
 
-#cited sources
-*w3Schools
-*stackoverflow
-*google
-*youtube- brocode
+# Cited Soruces
+* w3Schools
+* Stackoverflow
+* Google
+* Youtube- Brocode
+  Supriya Bhor, Shila Pattewar, Shobana Hariraman (provided great assistance)
+* React.dev

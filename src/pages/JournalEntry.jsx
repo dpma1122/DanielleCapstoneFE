@@ -62,6 +62,7 @@ export default function JournalEntry(props) {
                     <p>{props.journal.title}</p>
                     <p>{props.journal.content}</p>
                     <button onClick={handleEdit}>Edit</button>
+                    <br />
                     <button onClick={handleDelete}>Delete</button>
                 </div>
             )}

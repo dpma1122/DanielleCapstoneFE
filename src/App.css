@@ -2,7 +2,8 @@
 body{
   background-image:url('https://images.unsplash.com/photo-1441034281545-78296c3a6934?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
   background-repeat: no-repeat; 
-  background-position:center; 
+  background-size: cover;
+  font-size: 25px; 
   
 }
 
@@ -11,6 +12,7 @@ body{
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+
 }
 
 .logo {
@@ -49,7 +51,4 @@ body{
   color: #888;
 }
 
-
-.journalentry{
-  background-image: url('https://images.unsplash.com/photo-1510922903530-28ecf3f00362?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-}
+.
