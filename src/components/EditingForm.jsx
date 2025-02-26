@@ -20,8 +20,7 @@ const EditJournalForm = ({ journal, onUpdate, onCancel }) => {
     try {
       const response = await axios.put(
         `http://localhost:5000/api/journals/${journal._id}`,
-        formData,
-        { headers: { "x-auth-token": localStorage.getItem("token") } }
+        formData
       );
       onUpdate(response.data);
     } catch (error) {
