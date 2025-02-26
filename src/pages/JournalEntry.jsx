@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
  
-export default function JournalEntry() {
+export default function JournalEntry(props) {
     const nav = useNavigate();
     const [formData, setFormData] = useState({ title: '', content: '' });
  
@@ -18,6 +18,16 @@ export default function JournalEntry() {
         } catch (error) {
             console.log(error);
         }
+    }
+ 
+    function handleEdit() {
+        props.setIsEditing(true);
+        props.setSelectedJournal(props.journal);
+    }
+ 
+    function handleDelete() {
+        // Implement delete functionality here
+        console.log('Delete functionality not implemented');
     }
  
     return (
@@ -46,6 +56,15 @@ export default function JournalEntry() {
                 </div>
                 <button type="submit">Save Journal Entry</button>
             </form>
+ 
+            {props.journal && (
+                <div>
+                    <p>{props.journal.title}</p>
+                    <p>{props.journal.content}</p>
+                    <button onClick={handleEdit}>Edit</button>
+                    <button onClick={handleDelete}>Delete</button>
+                </div>
+            )}
         </>
     );
 }
